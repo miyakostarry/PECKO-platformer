@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqy4q85aagaqo"]
+
+[ext_resource type="Script" uid="uid://com5xd1x8vjq0" path="res://muni.gd" id="1_ftfej"]
+[ext_resource type="Texture2D" uid="uid://6j1vh8r137mb" path="res://images/Sprite--background-0000002.png" id="1_gkacw"]
+[ext_resource type="Texture2D" uid="uid://c2mmcdgf4tg0s" path="res://images/Sprite-button-0009986671.png" id="3_4roq3"]
+[ext_resource type="Texture2D" uid="uid://c3t1er7sme7a2" path="res://images/Sprite-button-000000971.png" id="4_4roq3"]
+
+[node name="MUNI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ftfej")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -98.0
+offset_top = -101.0
+offset_right = 240.57141
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gkacw")
+stretch_mode = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -411.0
+offset_top = -105.0
+offset_right = -369.0
+offset_bottom = -63.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(7, 7)
+texture_normal = ExtResource("3_4roq3")
+texture_pressed = ExtResource("4_4roq3")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="toggled" from="TextureButton" to="." method="_on_texture_button_toggled"]
