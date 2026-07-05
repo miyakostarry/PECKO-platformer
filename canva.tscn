@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4b4movd5a7s7"]
+
+[ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="1_24qyr"]
+
+[node name="canva" type="CanvasLayer"]
+
+[node name="coinC" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -248.0
+offset_top = -89.0
+offset_right = -14.0
+offset_bottom = -16.0
+theme_override_colors/font_color = Color(1.5709726, 1.1626154, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.036250167, 0.0028499684, 1.1940695e-09, 1)
+theme_override_colors/font_outline_color = Color(0.932267, 0.43201208, 0.22726196, 1)
+theme_override_fonts/font = ExtResource("1_24qyr")
+theme_override_font_sizes/font_size = 16
+text = "coin : 0"

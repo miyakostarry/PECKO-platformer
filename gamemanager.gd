@@ -1,12 +1,12 @@
 extends Node
 
 var score= 0
-@onready var label = %canva/coinC
+@onready var label = %coinC
 func _add_point():
 
 	score +=1
 
-	label.text = "coin : " + str(score)
+	label.text = str(score)
 	
 	print(score)
 	

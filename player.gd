@@ -5,12 +5,21 @@ const SPEED = 130.0
 const JUMP_VELOCITY = -270
 
 var auto_jump = false
+var dead = false
 
 @onready var ani=$AnimatedSprite2D
 
 
 func _physics_process(delta: float) -> void:
+
+	if dead:
+		velocity.x =0
+		velocity.y += get_gravity().y * delta
+		move_and_slide()
+		return
 	# Add the gravity.
+
+
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 

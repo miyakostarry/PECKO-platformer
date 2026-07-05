@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwdw2ek6q61mo"
+path="res://.godot/imported/PECKO PLAY.mpeg.ogg-da38ae923e70f9e0d52e24ddd18fdac9.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/PECKO PLAY.mpeg.ogg"
+dest_files=["res://.godot/imported/PECKO PLAY.mpeg.ogg-da38ae923e70f9e0d52e24ddd18fdac9.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
