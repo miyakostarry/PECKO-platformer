@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://c02jn32kqx5j1"]
 
-[ext_resource type="Script" uid="uid://c4dj44pk7mwsc" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://c4dj44pk7mwsc" path="res://script/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://br3cfb7xy2rq2" path="res://images/Sprite jumpdie biyo.-sheet.png" id="2_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://4eymdsn7dp05" path="res://images/Sprite-bubble21.png" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://br4aw0bqvhu1u" path="res://images/Sprite jump 2 bbi..png" id="3_sweqy"]

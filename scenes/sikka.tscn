@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://ccs56o7ct8myt"]
 
-[ext_resource type="Script" uid="uid://med070kpjh14" path="res://sikka.gd" id="1_vubr3"]
+[ext_resource type="Script" uid="uid://med070kpjh14" path="res://script/sikka.gd" id="1_vubr3"]
 [ext_resource type="Texture2D" uid="uid://b67oxe0urwhcf" path="res://assets/coin.png" id="1_xwqkn"]
 [ext_resource type="AudioStream" uid="uid://dy7sd03tt3fb0" path="res://assets/Sounds/sfx_coin.ogg" id="3_iyxbf"]
 

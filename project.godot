@@ -17,8 +17,8 @@ config/icon="uid://bb1rgrhxoi47w"
 
 [autoload]
 
-Settings="*res://settings.gd"
-MusicManager="*res://music_manager.gd"
+Settings="*res://script/settings.gd"
+MusicManager="*res://script/music_manager.gd"
 
 [display]
 

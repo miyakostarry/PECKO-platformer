@@ -1,17 +1,17 @@
 [gd_scene load_steps=37 format=3 uid="uid://cqy4q85aagaqo"]
 
-[ext_resource type="Script" uid="uid://com5xd1x8vjq0" path="res://muni.gd" id="1_ftfej"]
+[ext_resource type="Script" uid="uid://com5xd1x8vjq0" path="res://script/muni.gd" id="1_8tje8"]
 [ext_resource type="Texture2D" uid="uid://pgdg8fsqscra" path="res://images/Sprite-blue0003.png" id="2_hb3uf"]
 [ext_resource type="Texture2D" uid="uid://bvb0bs0mld3hk" path="res://images/Sprite-0004 Copy.png" id="5_b4xef"]
 [ext_resource type="Texture2D" uid="uid://bs4b2ufq5xneh" path="res://images/Sprite-blue0003-sheet.png" id="5_li8au"]
 [ext_resource type="Texture2D" uid="uid://bv3mkqeywcld6" path="res://images/Sprite-bubble3.png" id="6_2a8tg"]
-[ext_resource type="Texture2D" uid="uid://bldrafa1p8cvm" path="res://enemy000 sprite.png" id="7_2a8tg"]
+[ext_resource type="Texture2D" uid="uid://bldrafa1p8cvm" path="res://images/enemy000 sprite.png" id="6_b7hf2"]
 [ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="8_hb3uf"]
 [ext_resource type="Texture2D" uid="uid://dgwspryk4gxln" path="res://images/Sprite jump biyo..png" id="9_hypy8"]
 [ext_resource type="Texture2D" uid="uid://ctv4efo32bov1" path="res://assets/platforms.png" id="10_hypy8"]
-[ext_resource type="Script" uid="uid://dm6a5pabambkx" path="res://muni_music.gd" id="11_li8au"]
+[ext_resource type="Script" uid="uid://dm6a5pabambkx" path="res://script/muni_music.gd" id="11_75kqg"]
 [ext_resource type="AudioStream" uid="uid://dwdw2ek6q61mo" path="res://assets/Sounds/PECKO PLAY.mpeg.ogg" id="12_8tje8"]
-[ext_resource type="PackedScene" uid="uid://byf7jpauwlq8b" path="res://setting_btn.tscn" id="12_b7hf2"]
+[ext_resource type="PackedScene" uid="uid://byf7jpauwlq8b" path="res://setting_btn.tscn" id="12_eb1wm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w1ouy"]
 atlas = ExtResource("5_li8au")
@@ -114,15 +114,15 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_023g0"]
-atlas = ExtResource("7_2a8tg")
+atlas = ExtResource("6_b7hf2")
 region = Rect2(0, 0, 26, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2eqvy"]
-atlas = ExtResource("7_2a8tg")
+atlas = ExtResource("6_b7hf2")
 region = Rect2(52, 0, 26, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlshc"]
-atlas = ExtResource("7_2a8tg")
+atlas = ExtResource("6_b7hf2")
 region = Rect2(26, 0, 26, 26)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_talp3"]
@@ -192,7 +192,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ftfej")
+script = ExtResource("1_8tje8")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 visible = false
@@ -318,9 +318,9 @@ flat = true
 [node name="muni_music" type="AudioStreamPlayer2D" parent="canva"]
 stream = ExtResource("12_8tje8")
 autoplay = true
-script = ExtResource("11_li8au")
+script = ExtResource("11_75kqg")
 
-[node name="settingBTN" parent="." instance=ExtResource("12_b7hf2")]
+[node name="settingBTN" parent="." instance=ExtResource("12_eb1wm")]
 
 [connection signal="pressed" from="canva/boxmenu/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="canva/boxmenu/quit" to="." method="_on_quit_pressed"]

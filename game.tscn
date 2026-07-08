@@ -1,26 +1,26 @@
 [gd_scene load_steps=48 format=3 uid="uid://35payjfwb20h"]
 
-[ext_resource type="PackedScene" uid="uid://c02jn32kqx5j1" path="res://player.tscn" id="1_80nbo"]
-[ext_resource type="Script" uid="uid://cscpxiqbcouns" path="res://game.gd" id="1_215e1"]
-[ext_resource type="Script" uid="uid://1xmcmpn3hyex" path="res://gamemanager.gd" id="1_hve3p"]
-[ext_resource type="Texture2D" uid="uid://csu1xy2f3utj7" path="res://assets/world_tileset.png" id="2_e2o6t"]
-[ext_resource type="Texture2D" uid="uid://77pw7o4l55xv" path="res://images/Sprite-0002.png" id="2_eow3j"]
-[ext_resource type="PackedScene" uid="uid://bbm2vpes5lqxx" path="res://platform.tscn" id="3_fc0e3"]
-[ext_resource type="PackedScene" uid="uid://ccs56o7ct8myt" path="res://sikka.tscn" id="5_7jktm"]
-[ext_resource type="Script" uid="uid://cwicxjk72yi18" path="res://coin.gd" id="5_j5wjh"]
-[ext_resource type="PackedScene" uid="uid://dtps70xfbw7ug" path="res://killzone.tscn" id="5_ryrav"]
-[ext_resource type="PackedScene" uid="uid://bsm1qjnhared8" path="res://slime.tscn" id="6_ryrav"]
-[ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="10_mfdv2"]
-[ext_resource type="PackedScene" uid="uid://dssvf3tornljq" path="res://pause.tscn" id="11_215e1"]
-[ext_resource type="Script" uid="uid://bmravnujjeiqm" path="res://canva.gd" id="11_lc2xo"]
-[ext_resource type="Texture2D" uid="uid://b67oxe0urwhcf" path="res://assets/coin.png" id="11_mfdv2"]
-[ext_resource type="Script" uid="uid://cr775xj16qmui" path="res://music.gd" id="15_7sc4i"]
-[ext_resource type="AudioStream" uid="uid://sv5mkfhm1wy6" path="res://assets/Sounds/piano2.ogg" id="15_80cx4"]
-[ext_resource type="PackedScene" uid="uid://be5og5o0v73sv" path="res://checkpoints.tscn" id="17_e8heu"]
-[ext_resource type="PackedScene" uid="uid://dxmc8dvi5jl6s" path="res://textbox.tscn" id="18_rvswv"]
+[ext_resource type="Script" uid="uid://cscpxiqbcouns" path="res://script/game.gd" id="1_ssvqc"]
+[ext_resource type="Script" uid="uid://1xmcmpn3hyex" path="res://script/gamemanager.gd" id="2_264po"]
+[ext_resource type="Texture2D" uid="uid://csu1xy2f3utj7" path="res://assets/world_tileset.png" id="3_1kice"]
+[ext_resource type="Texture2D" uid="uid://77pw7o4l55xv" path="res://images/Sprite-0002.png" id="4_5newe"]
+[ext_resource type="PackedScene" uid="uid://bbm2vpes5lqxx" path="res://scenes/platform.tscn" id="5_37s47"]
+[ext_resource type="PackedScene" uid="uid://c02jn32kqx5j1" path="res://scenes/player.tscn" id="6_bt5mj"]
+[ext_resource type="PackedScene" uid="uid://dtps70xfbw7ug" path="res://scenes/killzone.tscn" id="7_e1j6l"]
+[ext_resource type="Script" uid="uid://cwicxjk72yi18" path="res://script/coin.gd" id="8_pl11u"]
+[ext_resource type="PackedScene" uid="uid://ccs56o7ct8myt" path="res://scenes/sikka.tscn" id="9_bhx41"]
+[ext_resource type="PackedScene" uid="uid://bsm1qjnhared8" path="res://scenes/slime.tscn" id="10_qnb83"]
+[ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="11_sww3w"]
+[ext_resource type="PackedScene" uid="uid://dssvf3tornljq" path="res://scenes/pause.tscn" id="12_suyxu"]
+[ext_resource type="Script" uid="uid://bmravnujjeiqm" path="res://script/canva.gd" id="13_sgl2t"]
+[ext_resource type="Texture2D" uid="uid://b67oxe0urwhcf" path="res://assets/coin.png" id="14_qouja"]
+[ext_resource type="AudioStream" uid="uid://sv5mkfhm1wy6" path="res://assets/Sounds/piano2.ogg" id="15_wljb1"]
+[ext_resource type="Script" uid="uid://cr775xj16qmui" path="res://script/music.gd" id="16_v2yb1"]
+[ext_resource type="PackedScene" uid="uid://be5og5o0v73sv" path="res://scenes/checkpoints.tscn" id="17_js0lu"]
+[ext_resource type="PackedScene" uid="uid://dxmc8dvi5jl6s" path="res://scenes/textbox.tscn" id="18_gxtfn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
-texture = ExtResource("2_e2o6t")
+texture = ExtResource("3_1kice")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -183,7 +183,7 @@ texture = ExtResource("2_e2o6t")
 2:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j5wjh"]
-texture = ExtResource("2_eow3j")
+texture = ExtResource("4_5newe")
 margins = Vector2i(5, 5)
 0:0/0 = 0
 1:0/0 = 0
@@ -379,51 +379,51 @@ _data = {
 distance = -40.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iotsf"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lc2xo"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_215e1"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7sc4i"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_80cx4"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(64, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e8heu"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rvswv"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(96, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_boyg6"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(112, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e36ub"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(128, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hb5m1"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(144, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x5p1p"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(160, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhcbd"]
-atlas = ExtResource("11_mfdv2")
+atlas = ExtResource("14_qouja")
 region = Rect2(176, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f1jbl"]
@@ -471,12 +471,12 @@ animations = [{
 }]
 
 [node name="game" type="Node2D"]
-script = ExtResource("1_215e1")
+script = ExtResource("1_ssvqc")
 metadata/_edit_vertical_guides_ = [-350.0]
 
 [node name="gamemanager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("1_hve3p")
+script = ExtResource("2_264po")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_fc0e3")
@@ -488,7 +488,7 @@ layer_1/tile_data = PackedInt32Array(-131069, 262144, 0, -131068, 262144, 0, -19
 
 [node name="platforM" type="Node" parent="."]
 
-[node name="platform2" parent="platforM" instance=ExtResource("3_fc0e3")]
+[node name="platform2" parent="platforM" instance=ExtResource("5_37s47")]
 position = Vector2(229, -41)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platforM/platform2"]
@@ -497,7 +497,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform3" parent="platforM" instance=ExtResource("3_fc0e3")]
+[node name="platform3" parent="platforM" instance=ExtResource("5_37s47")]
 z_index = 5
 position = Vector2(287, -121)
 
@@ -507,7 +507,7 @@ libraries = {
 }
 autoplay = "movela"
 
-[node name="platform4" parent="platforM" instance=ExtResource("3_fc0e3")]
+[node name="platform4" parent="platforM" instance=ExtResource("5_37s47")]
 position = Vector2(422, -296)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platforM/platform4"]
@@ -516,7 +516,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform5" parent="platforM" instance=ExtResource("3_fc0e3")]
+[node name="platform5" parent="platforM" instance=ExtResource("5_37s47")]
 position = Vector2(-244, -153)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platforM/platform5"]
@@ -525,7 +525,7 @@ libraries = {
 }
 autoplay = "new_animation"
 
-[node name="player" parent="." instance=ExtResource("1_80nbo")]
+[node name="player" parent="." instance=ExtResource("6_bt5mj")]
 unique_name_in_owner = true
 position = Vector2(-160, -14)
 
@@ -539,105 +539,105 @@ limit_bottom = 43
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[node name="killzone" parent="." instance=ExtResource("5_ryrav")]
+[node name="killzone" parent="." instance=ExtResource("7_e1j6l")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 position = Vector2(-87, 16)
 shape = SubResource("WorldBoundaryShape2D_eow3j")
 
 [node name="coin" type="Node" parent="."]
-script = ExtResource("5_j5wjh")
+script = ExtResource("8_pl11u")
 
-[node name="Sikka7" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka7" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(325, -73)
 
-[node name="Sikka10" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka10" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(120, -104)
 
-[node name="Sikka8" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka8" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-57, -283)
 
-[node name="Sikka9" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka9" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(14, -313)
 
-[node name="Sikka6" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka6" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(200, -136)
 
-[node name="Sikka3" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka3" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-277, -139)
 
-[node name="Sikka4" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka4" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-214, -89)
 
-[node name="Sikka5" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka5" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(88, -186)
 
-[node name="Sikka2" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka2" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-39, -119)
 
-[node name="Sikka" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-89, -7)
 
-[node name="Sikka11" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka11" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(392, -314)
 
-[node name="Sikka12" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka12" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(329, -352)
 
-[node name="Sikka13" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka13" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(163, -330)
 
-[node name="Sikka14" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka14" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(-96, -250)
 
-[node name="Sikka15" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka15" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(664, -328)
 
-[node name="Sikka16" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka16" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(744, -327)
 
-[node name="Sikka17" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka17" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(602, -374)
 
-[node name="Sikka18" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka18" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(362, -102)
 
-[node name="Sikka19" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka19" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(950, -232)
 
-[node name="Sikka20" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka20" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(843, -226)
 
-[node name="Sikka21" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka21" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(630, -233)
 
-[node name="Sikka22" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka22" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(616, -217)
 
-[node name="Sikka23" parent="coin" instance=ExtResource("5_7jktm")]
+[node name="Sikka23" parent="coin" instance=ExtResource("9_bhx41")]
 position = Vector2(647, -218)
 
 [node name="slime" type="Node" parent="."]
 
-[node name="slime8" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime8" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(97, -308)
 
-[node name="slime1" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime1" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(2, -6)
 
-[node name="slime2" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime2" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(7, -100)
 
-[node name="slime3" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime3" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(-94, -131)
 
-[node name="slime4" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime4" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(250, -293)
 
-[node name="slime6" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime6" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(646, -310)
 
-[node name="slime7" parent="slime" instance=ExtResource("6_ryrav")]
+[node name="slime7" parent="slime" instance=ExtResource("10_qnb83")]
 position = Vector2(-133, -69)
 
 [node name="label" type="Node" parent="."]
@@ -648,14 +648,14 @@ offset_top = -375.0
 offset_right = 881.0
 offset_bottom = -343.0
 theme_override_colors/font_color = Color(0.16862746, 0.33333334, 0.8509804, 1)
-theme_override_fonts/font = ExtResource("10_mfdv2")
+theme_override_fonts/font = ExtResource("11_sww3w")
 theme_override_font_sizes/font_size = 16
 text = "more to go"
 
-[node name="pause" parent="." instance=ExtResource("11_215e1")]
+[node name="pause" parent="." instance=ExtResource("12_suyxu")]
 
 [node name="canva" type="CanvasLayer" parent="."]
-script = ExtResource("11_lc2xo")
+script = ExtResource("13_sgl2t")
 
 [node name="Timer" type="Timer" parent="canva"]
 
@@ -669,7 +669,7 @@ offset_bottom = 148.0
 theme_override_colors/font_color = Color(0.9934848, 0.93387705, 0.18936563, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.54509807)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("10_mfdv2")
+theme_override_fonts/font = ExtResource("11_sww3w")
 theme_override_font_sizes/font_size = 59
 text = " 0
 "
@@ -697,7 +697,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.89, 0.7120001, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.73, 0.38081667, 0.1314, 0.8666667)
-theme_override_fonts/font = ExtResource("10_mfdv2")
+theme_override_fonts/font = ExtResource("11_sww3w")
 theme_override_font_sizes/font_size = 72
 
 [node name="timer" type="Label" parent="canva"]
@@ -711,19 +711,19 @@ offset_bottom = 58.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.99, 0.89595, 0.04950001, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8901961)
-theme_override_fonts/font = ExtResource("10_mfdv2")
+theme_override_fonts/font = ExtResource("11_sww3w")
 theme_override_font_sizes/font_size = 43
 text = "00:00:00"
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("15_80cx4")
+stream = ExtResource("15_wljb1")
 autoplay = true
 bus = &"MUSIC"
-script = ExtResource("15_7sc4i")
+script = ExtResource("16_v2yb1")
 
-[node name="checkpoints" parent="." instance=ExtResource("17_e8heu")]
+[node name="checkpoints" parent="." instance=ExtResource("17_js0lu")]
 position = Vector2(-139, -46)
 
-[node name="textbox" parent="." instance=ExtResource("18_rvswv")]
+[node name="textbox" parent="." instance=ExtResource("18_gxtfn")]
 
 [connection signal="timeout" from="canva/Timer" to="canva" method="_on_timer_timeout"]

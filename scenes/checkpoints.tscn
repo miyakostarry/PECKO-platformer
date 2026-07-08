@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://be5og5o0v73sv"]
 
-[ext_resource type="Script" uid="uid://cksc6xlidrkai" path="res://checkpoints.gd" id="1_blmln"]
+[ext_resource type="Script" uid="uid://cksc6xlidrkai" path="res://script/checkpoints.gd" id="1_blmln"]
 [ext_resource type="Texture2D" uid="uid://csu1xy2f3utj7" path="res://assets/world_tileset.png" id="2_y3dhi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_np03c"]

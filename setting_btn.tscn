@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://byf7jpauwlq8b"]
 
-[ext_resource type="Script" uid="uid://dwsjfbosvof70" path="res://setting_btn.gd" id="1_do6hg"]
+[ext_resource type="Script" uid="uid://dwsjfbosvof70" path="res://script/setting_btn.gd" id="1_do6hg"]
 [ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="1_q7ixw"]
 
 [node name="settingBTN" type="CanvasLayer"]
