@@ -6,8 +6,9 @@ func _on_body_entered(_body: Node2D) -> void:
 	game_manager._add_point()
 	# if _body.name == "player":
 	get_parent()._sum()
-	$audio.play()
-	await get_tree().create_timer(0.15).timeout
+	if Settings.sfx_on:
+		$audio.play()
+	await get_tree().create_timer(0.13).timeout
 
 	queue_free()
 

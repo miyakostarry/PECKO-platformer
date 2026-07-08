@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://com5xd1x8vjq0" path="res://muni.gd" id="1_ftfej"]
 [ext_resource type="Texture2D" uid="uid://pgdg8fsqscra" path="res://images/Sprite-blue0003.png" id="2_hb3uf"]
-[ext_resource type="Texture2D" uid="uid://c2mmcdgf4tg0s" path="res://images/Sprite-button-0009986671.png" id="3_4roq3"]
-[ext_resource type="Texture2D" uid="uid://c3t1er7sme7a2" path="res://images/Sprite-button-000000971.png" id="4_4roq3"]
 [ext_resource type="Texture2D" uid="uid://bvb0bs0mld3hk" path="res://images/Sprite-0004 Copy.png" id="5_b4xef"]
 [ext_resource type="Texture2D" uid="uid://bs4b2ufq5xneh" path="res://images/Sprite-blue0003-sheet.png" id="5_li8au"]
 [ext_resource type="Texture2D" uid="uid://bv3mkqeywcld6" path="res://images/Sprite-bubble3.png" id="6_2a8tg"]
@@ -11,7 +9,9 @@
 [ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="8_hb3uf"]
 [ext_resource type="Texture2D" uid="uid://dgwspryk4gxln" path="res://images/Sprite jump biyo..png" id="9_hypy8"]
 [ext_resource type="Texture2D" uid="uid://ctv4efo32bov1" path="res://assets/platforms.png" id="10_hypy8"]
+[ext_resource type="Script" uid="uid://dm6a5pabambkx" path="res://muni_music.gd" id="11_li8au"]
 [ext_resource type="AudioStream" uid="uid://dwdw2ek6q61mo" path="res://assets/Sounds/PECKO PLAY.mpeg.ogg" id="12_8tje8"]
+[ext_resource type="PackedScene" uid="uid://byf7jpauwlq8b" path="res://setting_btn.tscn" id="12_b7hf2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w1ouy"]
 atlas = ExtResource("5_li8au")
@@ -224,28 +224,10 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureButton" type="TextureButton" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -345.00006
-offset_top = -170.99997
-offset_right = -303.0
-offset_bottom = -128.99997
-grow_horizontal = 0
-grow_vertical = 2
-scale = Vector2(7, 7)
-texture_normal = ExtResource("3_4roq3")
-texture_pressed = ExtResource("4_4roq3")
-
 [node name="canva" type="CanvasLayer" parent="."]
 
 [node name="backgd" type="AnimatedSprite2D" parent="canva"]
-position = Vector2(576, 338)
+position = Vector2(574, 443)
 scale = Vector2(18, 18)
 sprite_frames = SubResource("SpriteFrames_es1a2")
 autoplay = "default"
@@ -294,10 +276,10 @@ region_enabled = true
 region_rect = Rect2(16, 0, 32, 8)
 
 [node name="boxmenu" type="VBoxContainer" parent="canva"]
-offset_left = 789.0
-offset_top = 321.0
-offset_right = 1040.0
-offset_bottom = 487.0
+offset_left = 790.0
+offset_top = 289.0
+offset_right = 1077.0
+offset_bottom = 540.0
 
 [node name="play" type="Button" parent="canva/boxmenu"]
 layout_mode = 2
@@ -322,11 +304,24 @@ theme_override_font_sizes/font_size = 72
 text = "QUIT"
 flat = true
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="canva"]
+[node name="setting" type="Button" parent="canva/boxmenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.028000014, 0.11759994, 0.7, 1)
+theme_override_colors/font_focus_color = Color(0.61271673, 0.33950004, 0.97, 1)
+theme_override_colors/font_pressed_color = Color(0.94, 0.7269333, 0.14099997, 1)
+theme_override_colors/font_hover_color = Color(0.03840002, 0.71424, 0.96, 1)
+theme_override_fonts/font = ExtResource("8_hb3uf")
+theme_override_font_sizes/font_size = 72
+text = "SETTINGS"
+flat = true
+
+[node name="muni_music" type="AudioStreamPlayer2D" parent="canva"]
 stream = ExtResource("12_8tje8")
 autoplay = true
+script = ExtResource("11_li8au")
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="toggled" from="TextureButton" to="." method="_on_texture_button_toggled"]
+[node name="settingBTN" parent="." instance=ExtResource("12_b7hf2")]
+
 [connection signal="pressed" from="canva/boxmenu/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="canva/boxmenu/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="canva/boxmenu/setting" to="." method="_on_setting_pressed"]

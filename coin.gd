@@ -9,6 +9,7 @@ var total_coin= 23
 
 func _sum():
 	coin += 1
+	print("coin collected: ", coin)
 	
 	if coin == total_coin:
 		print("winnnnner")

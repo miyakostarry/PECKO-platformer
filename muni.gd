@@ -11,19 +11,6 @@ func _process(_delta: float) -> void:
 	pass
 
 
-# func _on_texture_button_pressed() -> void:
-# 	get_tree().change_scene_to_file("res://game.tscn") 
-
-
-
-	
-
-	
-	# Replace with function body.
-
-
-
-
 func _on_play_pressed() -> void:
 	get_tree().change_scene_to_file("res://game.tscn")
 	# Replace with function body.
@@ -31,3 +18,7 @@ func _on_play_pressed() -> void:
 
 func _on_quit_pressed() -> void:
 	get_tree().quit() # Replace with function body.
+
+
+func _on_setting_pressed() -> void:
+	$settingBTN.show() # Replace with function body.

@@ -1,0 +1,96 @@
+[gd_scene load_steps=3 format=3 uid="uid://byf7jpauwlq8b"]
+
+[ext_resource type="Script" uid="uid://dwsjfbosvof70" path="res://setting_btn.gd" id="1_do6hg"]
+[ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="1_q7ixw"]
+
+[node name="settingBTN" type="CanvasLayer"]
+script = ExtResource("1_do6hg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.5
+offset_top = -235.0
+offset_right = 300.5
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.28130004, 0.51086676, 0.97, 0.8745098)
+
+[node name="BACK" type="Button" parent="."]
+offset_left = 286.0
+offset_top = 101.0
+offset_right = 358.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0.99, 0.84645003, 0.1287, 1)
+theme_override_colors/font_pressed_color = Color(0.055999994, 0.2792, 0.8, 1)
+theme_override_fonts/font = ExtResource("1_q7ixw")
+theme_override_font_sizes/font_size = 32
+text = "BACK"
+flat = true
+
+[node name="sfxxx" type="Button" parent="."]
+offset_left = 540.0
+offset_top = 329.0
+offset_right = 620.0
+offset_bottom = 385.0
+theme_override_colors/font_color = Color(0.92, 0.8924, 0.09200002, 1)
+theme_override_colors/font_pressed_color = Color(0.88, 0.008799992, 0.19756, 1)
+theme_override_fonts/font = ExtResource("1_q7ixw")
+theme_override_font_sizes/font_size = 48
+text = "-"
+flat = true
+
+[node name="musicCC" type="Button" parent="."]
+offset_left = 534.0
+offset_top = 252.0
+offset_right = 606.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0.99, 0.84645003, 0.1287, 1)
+theme_override_colors/font_pressed_color = Color(0.055999994, 0.2792, 0.8, 1)
+theme_override_fonts/font = ExtResource("1_q7ixw")
+theme_override_font_sizes/font_size = 48
+text = "-
+"
+flat = true
+
+[node name="musicC" type="Label" parent="."]
+offset_left = 383.0
+offset_top = 257.0
+offset_right = 500.0
+offset_bottom = 321.0
+theme_override_colors/font_color = Color(0.94, 0.8171733, 0.018799981, 1)
+theme_override_fonts/font = ExtResource("1_q7ixw")
+theme_override_font_sizes/font_size = 48
+text = "music : "
+
+[node name="sfxx" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 336.0
+offset_right = 544.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(1, 0.81200004, 0.060000002, 1)
+theme_override_fonts/font = ExtResource("1_q7ixw")
+theme_override_font_sizes/font_size = 48
+text = "sound :"
+
+[node name="HScrollBar" type="HScrollBar" parent="."]
+visible = false
+offset_left = 536.0
+offset_top = 273.0
+offset_right = 665.0
+offset_bottom = 295.0
+
+[node name="HScrollBar2" type="HScrollBar" parent="."]
+visible = false
+offset_left = 537.0
+offset_top = 354.0
+offset_right = 661.0
+offset_bottom = 376.0
+
+[connection signal="pressed" from="BACK" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="sfxxx" to="." method="_on_sfxxx_pressed"]
+[connection signal="pressed" from="musicCC" to="." method="_on_music_cc_pressed"]

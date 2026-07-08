@@ -1,3 +1,87 @@
-[gd_scene format=3 uid="uid://dssvf3tornljq"]
+[gd_scene load_steps=5 format=3 uid="uid://dssvf3tornljq"]
+
+[ext_resource type="FontFile" uid="uid://bcxyxoqbvgm17" path="res://assets/fonts/PixelOperatorSC-Bold.ttf" id="1_45vjg"]
+[ext_resource type="Script" uid="uid://m1h0h7te5gqn" path="res://pause.gd" id="1_aq7p1"]
+[ext_resource type="PackedScene" uid="uid://byf7jpauwlq8b" path="res://setting_btn.tscn" id="3_6eyaj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45vjg"]
 
 [node name="pause" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_aq7p1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -447.5
+offset_top = -268.5
+offset_right = 447.5
+offset_bottom = 268.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06859999, 0.53949, 0.98, 0.6627451)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 434.0
+offset_top = 165.0
+offset_right = 694.0
+offset_bottom = 488.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_45vjg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+modulate = Color(1, 0.8666667, 0, 1)
+self_modulate = Color(0.4785, 0.53069997, 0.87, 1)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="resume" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93, 0.837, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.03020065, 0.25057095, 0.5933616, 1)
+theme_override_fonts/font = ExtResource("1_45vjg")
+theme_override_font_sizes/font_size = 72
+text = "RESUME
+"
+flat = true
+
+[node name="restart" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.88, 0.85536, 0.14080003, 1)
+theme_override_colors/font_pressed_color = Color(0.123095624, 0.057519615, 0.5184889, 1)
+theme_override_fonts/font = ExtResource("1_45vjg")
+theme_override_font_sizes/font_size = 72
+text = "RESTART"
+flat = true
+
+[node name="setting" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.97, 0.8626534, 0.16490002, 1)
+theme_override_colors/font_pressed_color = Color(0.21699995, 0.19, 1, 1)
+theme_override_fonts/font = ExtResource("1_45vjg")
+theme_override_font_sizes/font_size = 72
+text = "SETTING"
+flat = true
+
+[node name="backtomenu" type="Button" parent="."]
+offset_left = 823.0
+offset_top = 543.0
+offset_right = 1009.0
+offset_bottom = 583.0
+theme_override_colors/font_color = Color(0.91915554, 0.8410233, 0.13783282, 1)
+theme_override_colors/font_pressed_color = Color(0.1128, 0.25066653, 0.94, 1)
+theme_override_fonts/font = ExtResource("1_45vjg")
+theme_override_font_sizes/font_size = 32
+text = "BACK TO MENU"
+flat = true
+
+[node name="settingBTN" parent="." instance=ExtResource("3_6eyaj")]
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="backtomenu" to="." method="_on_backtomenu_pressed"]
