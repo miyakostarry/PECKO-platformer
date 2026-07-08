@@ -1,22 +1,76 @@
-# 🐥 PECKO – A Simple 2D Platformer
+# PECKO Platformer
 
-PECKO is a simple 2D platformer built with the Godot Engine. Your goal is to collect every coin while avoiding enemies and reaching the end of the level. This project is currently in development, with more mechanics and vibrant visuals planned for future updates.
+A 2D platformer game made using the Godot Engine.
 
-## 🎮 Features
+The player explores the world, collects coins, avoids enemies, and progresses through levels while experiencing custom visuals, sounds, and gameplay mechanics.
 
-- 🪙 Collect coins throughout the level
-- 👾 Avoid enemy slimes
-- ▶️ Simple start menu
-- 🎉 Level completion screen after collecting all coins
-- 🔄 Return to the start menu after completing the level
-- 🎨 Pixel art style
+## Features
 
-## 🛠️ Built With
+* 2D platformer gameplay
+* Player movement and controls
+* Coin collection system
+* Enemy interactions
+* Slime enemies
+* Custom backgrounds and characters
+* Main menu system
+* Sound effects and background music
 
-- **Godot Engine**
-- **GDScript**
+## Built With
 
-## 🚀 How to Play
+* **Engine:** Godot Engine
+* **Programming Language:** GDScript
+
+## Assets & Credits
+
+### Sounds
+
+Sound effects used in this game were created by:
+
+* **Brackeys**
+* **Asbjørn Thirslund**
+
+### Fonts
+
+Font used in the game:
+
+* **Jayvee Enaguas (HarvettFox96)**
+
+### Platform & Coin Sprites
+
+Platform and coin assets were taken from:
+
+* **Four Seasons Platformer Sprites**
+* **Brackeys' Platformer Bundle**
+
+### Music
+
+* Main game music and background music were created by me.
+* Menu page music was generated using **Gemini**.
+
+### Original Work
+
+The following parts were created by me:
+
+* Player characters
+* Slime enemies
+* Game backgrounds
+* Level design
+* Gameplay systems
+* GDScript code
+* User interface and menus
+
+## AI Assistance
+
+AI tools were used during development as a learning and coding assistant for:
+
+* Understanding Godot Engine concepts
+* Debugging errors
+* Learning GDScript implementation
+* Getting guidance on game development workflows
+
+The final game design, implementation, testing, and integration were done by me.
+
+## Installation
 
 1. Clone this repository:
 
@@ -24,36 +78,12 @@ PECKO is a simple 2D platformer built with the Godot Engine. Your goal is to col
 git clone https://github.com/miyakostarry/PECKO-platformer.git
 ```
 
-2. Open the project in Godot.
+2. Open the project using Godot Engine.
 
-3. Run `game.tscn` (or your main scene) and start playing!
+3. Run the project and enjoy the game!
 
-## 📸 Screenshots
+## License
 
-*Screenshots coming soon.*
+This project is created for learning and development purposes.
 
-## 📌 Roadmap
-
-- [ ] Add a working score UI
-- [ ] Improve enemy behaviour
-- [ ] Add sound effects and music
-- [ ] Create multiple levels
-- [ ] Add player animations
-- [ ] Make the world more vibrant with improved colours and backgrounds
-
-## 📝 Devlogs
-
-I've been documenting my progress while building PECKO. Recent updates include:
-
-- Added a simple start menu.
-- Implemented level completion after collecting all coins.
-- Added automatic return to the start menu.
-- Worked on displaying the coin score UI.
-
-## 🤝 Contributing
-
-Suggestions and feedback are always welcome!
-
-## 📄 License
-
-This project is licensed under the MIT License.
+External assets belong to their respective creators and are credited above.
