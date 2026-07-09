@@ -12,10 +12,13 @@ Play the game in your browser with link below
 **https://miyakostarry.itch.io/peckos-coin-rush**
 
 
-FEATURE ᓚᘏᗢ
+FEATURE ᓚᘏᗢ--------------------------------------
 game is basic beginner platformer game 
+
 -collect coin to win the game 
+
 - avoid slimes
+
 this is the one of first game i have completed completely made with [GODOT Engine]
 
 
@@ -31,18 +34,25 @@ Credits & Acknowledgements
 
 The following were created by me:
 -Player character
--Slime enemie
--Background artwork
--Level design
--User interface and menus
--Main gameplay music and background music
 
+-Slime enemie
+
+-Background artwork
+
+-Level design
+
+-User interface and menus
+
+-Main gameplay music and background music
+------------------------------------------------------
 ASSETS ╰(*°▽°*)╯
 
 Sounds  φ(*￣0￣)
-
+--------------------------------------------------
 -Brackeys
+
 -Asbjørn Thirslund
+
 [THE assets i used here were in brackey's platformer blunder so i have credited whoever he credited in his credits]
 
 Font ^o^
@@ -52,19 +62,23 @@ Font ^o^
 Platform & Coin Sprites
 
 -Four Seasons Platformer Sprites
+
 -Brackeys' Platformer Bundle
 
 Menu Music O.O
 
 -Generated using Gemini
-AI tools were used during development as learning and development assistants for-
+[AI tools were used during development as learning and development assistants for-]
 
 -Understanding Godot Engine concepts
+
 -Debugging errors
+
 -Learning GDScript
+
 -Exploring implementation ideas
 
-
+---------------------------------------------------------
 and... lots of them ☆*: .｡. o(≧▽≦)o .｡.:*☆ OwO ^o^
 
 License
