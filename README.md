@@ -1,89 +1,121 @@
 # PECKO Platformer
 
-A 2D platformer game made using the Godot Engine.
+A 2D platformer built with Godot where players collect coins, avoid slime enemies, and race against time through handcrafted levels.
 
-The player explores the world, collects coins, avoids enemies, and progresses through levels while experiencing custom visuals, sounds, and gameplay mechanics.
+<p align="center">
+  <img src="gameplay.png" alt="PECKO Platformer Gameplay" width="800">
+</p>
 
-## Features
+## 🎮 Try It
 
-* 2D platformer gameplay
-* Player movement and controls
-* Coin collection system
-* Enemy interactions
-* Slime enemies
-* Custom backgrounds and characters
-* Main menu system
-* Sound effects and background music
+Play the game in your browser:
 
-## Built With
+**https://miyakostarry.itch.io/peckos-coin-rush**
 
-* **Engine:** Godot Engine
-* **Programming Language:** GDScript
+---
 
-## Assets & Credits
+# 🚀 Quick Start
 
-### Sounds
+### Play Online
 
-Sound effects used in this game were created by:
+Open the demo link above and start playing instantly in your browser.
 
-* **Brackeys**
-* **Asbjørn Thirslund**
+---
 
-### Fonts
+# ✨ Features
 
-Font used in the game:
+* 🪙 Collect coins hidden throughout the level.
+* 👾 Avoid slime enemies while making your way to the goal.
+* 📜 Interactive notice boxes that guide the player.
+* ⏱️ Countdown timer to add challenge.
+* 🎵 Original gameplay soundtrack and immersive sound effects.
+* 🎨 Custom-designed characters, backgrounds, and levels.
+* 🖥️ Clean user interface with menu and settings.
 
-* **Jayvee Enaguas (HarvettFox96)**
+---
 
-### Platform & Coin Sprites
+# 💻 Run Locally
 
-Platform and coin assets were taken from:
+## Requirements
 
-* **Four Seasons Platformer Sprites**
-* **Brackeys' Platformer Bundle**
+* Godot Engine **4.x**
 
-### Music
-
-* Main game music and background music were created by me.
-* Menu page music was generated using **Gemini**.
-
-### Original Work
-
-The following parts were created by me:
-
-* Player characters
-* Slime enemies
-* Game backgrounds
-* Level design
-* Gameplay systems
-* GDScript code
-* User interface and menus
-
-## AI Assistance
-
-AI tools were used during development as a learning and coding assistant for:
-
-* Understanding Godot Engine concepts
-* Debugging errors
-* Learning GDScript implementation
-* Getting guidance on game development workflows
-
-The final game design, implementation, testing, and integration were done by me.
-
-## Installation
-
-1. Clone this repository:
+## Clone the repository
 
 ```bash
 git clone https://github.com/miyakostarry/PECKO-platformer.git
 ```
 
-2. Open the project using Godot Engine.
+## Launch the game
 
-3. Run the project and enjoy the game!
+1. Open Godot Engine.
+2. Click **Import**.
+3. Select the `project.godot` file.
+4. Click **Import & Edit**.
+5. Press **F5** or click **Run Project**.
 
-## License
+---
 
-This project is created for learning and development purposes.
+# ⚙️ How It Works
 
-External assets belong to their respective creators and are credited above.
+PECKO Platformer is built using the Godot Engine and GDScript. The game is organized using Godot's scene-based architecture, where the player, enemies, collectibles, UI, and levels are separate reusable scenes.
+
+The gameplay revolves around collecting coins while avoiding slime enemies before the timer runs out. Throughout development, I implemented mechanics such as player movement, collision detection, collectible items, interactive notice boxes, timers, menus, and UI using Godot's built-in nodes, signals, and physics system.
+
+This project was created as a learning experience to better understand 2D game development, scene management, and gameplay programming in Godot.
+
+---
+
+# 🙌 Credits & Acknowledgements
+
+## Original Work
+
+The following were created by me:
+
+* Player characters
+* Slime enemies
+* Background artwork
+* Level design
+* Gameplay systems
+* GDScript programming
+* User interface and menus
+* Main gameplay music and background music
+
+## Assets
+
+### Sounds
+
+* Brackeys
+* Asbjørn Thirslund
+
+### Font
+
+* Jayvee Enaguas (HarvettFox96)
+
+### Platform & Coin Sprites
+
+* Four Seasons Platformer Sprites
+* Brackeys' Platformer Bundle
+
+### Menu Music
+
+* Generated using Gemini
+
+## AI Assistance
+
+AI tools were used during development as learning and development assistants for:
+
+* Understanding Godot Engine concepts
+* Debugging errors
+* Learning GDScript
+* Exploring implementation ideas
+
+The final game design, implementation, testing, and integration were completed by me.
+
+---
+
+# 📄 License
+
+This project was created for learning and educational purposes.
+
+All third-party assets remain the property of their respective creators and are credited above.
